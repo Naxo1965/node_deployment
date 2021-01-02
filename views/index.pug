@@ -1,0 +1,15 @@
+extends layout
+block content
+    form(action="/" method="POST" id="agregar-url")
+        legend Añade tu URL en el formulario
+        .campo
+            input(  type="url" 
+                    name="urlOriginal" 
+                    id="urlOriginal" 
+                    placeholder="Añade tu URL" 
+                    required)
+        .campo.enviar
+            input(
+                    type="submit" 
+                    class="btn" 
+                    value="Acortar")
